@@ -15,8 +15,7 @@ public class Produto {
         this("", "", "", 0.0);
     }
     public String toString() {
-        String mensagem = String.format("Produto de nome %s e código %s", this.nome, this.codigo);
-        return mensagem;
+        return String.format("Produto de nome %s e código %s", this.nome, this.codigo);
     }
     //set
     public void setCodigo(String codigo){

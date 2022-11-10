@@ -1,7 +1,7 @@
 package Estagio02LP;
 import java.util.ArrayList;
 public class ListaDeProdutos {
-    private ArrayList<Produto> listaDeProdutos;
+    private final ArrayList<Produto> listaDeProdutos;
     public ListaDeProdutos(){
         this.listaDeProdutos = new ArrayList<>();
     }
@@ -25,6 +25,7 @@ public class ListaDeProdutos {
         for (Produto p : listaDeProdutos) {
             if (p.getCodigo().equals(codigoDoProduto)) {
                 existe = true;
+                break;
             }
         }
         return existe;

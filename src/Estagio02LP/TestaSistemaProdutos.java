@@ -10,12 +10,13 @@ public class TestaSistemaProdutos {
         sistema.cadastrarProduto(p1);
         /* todo Cadastre mais um Produto no sistema e que tem código  "123", nome "Arroz", descrição "Arroz Urbano" e preço 8 reais.*/
         Produto p2 = new Produto("123", "Arroz", "Arroz Urbano", 8);
+        System.out.println(p2.toString());
         sistema.cadastrarProduto(p2);
         /* todo Verifique no sistema, utilizando o método apropriado, se o sistema contém um produto de código "123".
             Caso tenha, mostre na saída padrão (System.out) a mensagem "Produto cadastrado com sucesso". Caso contrário, mostre a mensagem "Produto não cadastrado".*/
         boolean produtoCadastrado = sistema.existeProduto("123");
-        String mensagem = "";
-        if (produtoCadastrado == true) {
+        String mensagem;
+        if (produtoCadastrado) {
             mensagem = "Produto cadastrado com sucesso";
         }
         else {
