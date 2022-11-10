@@ -12,11 +12,10 @@ public class Produto {
         this.preco = preco;
     }
     public Produto() {
-        this("Sem código", " ", " ", 0.0);
+        this("", "", "", 0.0);
     }
     public String toString() {
-        String mensagem = String.format("Codigo: %s; Nome: %s; Descrição: %s; Preço: %d.",
-                this.codigo, this.nome, this.descricao, this.preco);
+        String mensagem = String.format("Produto de nome %s e código %s", this.nome, this.codigo);
         return mensagem;
     }
     //set
